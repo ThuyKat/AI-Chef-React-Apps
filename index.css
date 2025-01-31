@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family:"Intel",sans-serif;
+    background-color: #FAFAF8;
+}
+
+/* 
+======
+Header
+====== */
+header.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5em;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+header > img{
+    width:4em;
+}
+header >p{
+    font-weight: 400;
+    font-size:2rem;
+}
+
+/* 
+=======
+Main 
+======= */
+
+.main-container{
+    width: 900px;
+    max-width:90%;
+    margin:2em auto;
+}
+
+.new-ingredient-form{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap:0.8em;
+}
+
+.new-ingredient-form input{
+    padding:0.6em 0.8em;
+    width:100%;
+    border-radius:6px;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    flex-grow: 1;
+    min-width: 150px;
+    max-width: 100%;
+
+}
+.new-ingredient-form > button{
+    font-family: Inter, sans-serif;
+    padding:0.8em 1.4em;
+    border-radius:6px;
+    min-width:20%;
+    background-color: #141413;
+    color: #FAFAF8;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+.ingredients-container >ul{
+    margin-bottom: 48px;
+}
+.ingredients-container li{
+    color: #475467;
+    line-height: 28px;
+}
+.get-recipe-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.7em 1.3em;
+    background: #F0EFEB;
+    border-radius:8px;
+}
+.get-recipe-container h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 24px;
+}
+.get-recipe-container p {
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 20px;
+}
+.get-recipe-container>button{
+    padding:0.7em 1.1em;
+    border-radius:6px;
+    background: #D17557;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    color: #FAFAF8;
+    border:none;
+    font-family: Inter, sans-serif;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+.recipe-container {
+    color: #475467;
+    line-height: 28px;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.recipe-container ul li,.recipe-container ol li{
+    margin-bottom: 0.5em;
+}
